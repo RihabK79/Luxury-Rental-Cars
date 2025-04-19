@@ -1,0 +1,252 @@
+<!-- npx @tailwindcss/cli -i ./src/input.css -o ./src/output.css --watch -->
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="../src/output.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <title>Home Page</title>
+    <style>
+        @keyframes scroll {
+          from { transform: translateX(0); }
+          to { transform: translateX(calc(-50% - 8rem)); } /* Adjusted for gap-32 (8rem) */
+        }
+        
+        .animate-scroll {
+          animation: scroll 30s linear infinite;
+        }
+      </style>
+</head>
+<body class="bg-[#171515] text-white font-sans mb-10">
+    <!-- header -->
+    <header class="flex flex-row justify-between pl-10 pr-10 pb-4 pt-4 text-sm shadow-2xl bg-[#171515] shadow-[#75020F] rounded-xl items-center fixed top-0 left-0 right-0">
+        <div class="">
+            <img src="/Home/Assets/The_Koenigsegg__-removebg-preview.png" alt="" class="w-10 h-10">
+        </div>
+        <!-- Home - About - Contact -->
+        <div class="flex flex-row justify-evenly gap-15 opacity-80">
+            <p class="cursor-pointer underline">Home</p>
+            <p class="cursor-pointer hover:text-[#df2531]">About</p>
+            <p class="cursor-pointer hover:text-[#df2531]">Contact</p>
+        </div>
+        <!-- Sign in -->
+        <div class="flex flex-row gap-2 items-center border-0 bg-[#75020F] pl-4 pr-4 pt-2 pb-2 rounded-xl cursor-pointer opacity-80 hover:text-black">
+            <!-- <i class="fa-regular fa-user"></i> -->
+            <p>Get Started</p>
+        </div>
+    </header>
+
+    <!-- center [Maseratti c20 + sentence] -->
+    <section class="flex flex-col justify-between items-center mt-30">
+        <div class=" flex flex-col items-center gap-5">
+            <p class="font-bold text-7xl pl-10 font-sans text-center w-200 ">PREMIUM CAR RENTAL</p>
+        </div>
+        <!-- Search bar -->
+        <div class="flex flex-row items-center gap-12 bg-white text-black p-5 mt-10 rounded-xl font-bold">
+            <div class="flex flex-col items-start gap-1">
+                <p>Pick up & Return Location</p>
+                <p class="text-gray-400">Oujda, Marrokko</p>
+            </div>
+            <div>
+                <p>Start</p>
+                <p class="text-gray-400">Mai 13, 16:00 PM</p>
+            </div>
+            <div>
+                <p>Stop</p>
+                <p class="text-gray-400">Mai 24, 16:00 PM</p>
+            </div>
+            <div class="border-0 bg-[#75020F] text-white p-3 rounded-xl text-xl cursor-pointer">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+        </div>
+        <!-- image maserati c20 -->
+        <img src="./Assets/maserati.png" alt="Maserati C20" class="h-140 w-200 ml-10 mt-2 cursor-pointer">
+    </section>
+
+    <!-- Browse By type -->
+    <section class="flex flex-col">
+        <div class="border-0 pl-10 pt-5 pb-5 rounded-xl bg-[#51080d] ">
+            <p class="font-bold text-xl">Browse By Type</p>
+        </div>
+        <!-- types of cars -->
+        <div class="flex flex-row justify-center gap-2 mt-10">
+            <!-- SUV -->
+            <div class="flex flex-col border-0 w-20 h-17 rounded-xl pt-2.5 bg-[#75020f] items-center hover:bg-black cursor-pointer">
+                <img src="./Assets/SUV.png" alt="SUV" class="w-5 h-5">
+                <p class="text-sm">SUV</p>
+            </div>
+            <!-- Sedan -->
+            <div class="flex flex-col border-0 w-20 h-17 rounded-xl pt-2.5 bg-[#75020f] items-center hover:bg-black cursor-pointer">
+                <img src="./Assets/sedan.png" alt="SUV" class="w-5 h-5">
+                <p class="text-sm">Sedan</p>
+            </div>
+            <!-- Hatchback -->
+            <div class="flex flex-col border-0 w-20 h-17 rounded-xl pt-2.5 bg-[#75020f] items-center hover:bg-black cursor-pointer">
+                <img src="./Assets/Hatchback.png" alt="SUV" class="w-5 h-5">
+                <p class="text-sm">Hatchback</p>
+            </div>
+            <!-- Coupe -->
+            <div class="flex flex-col border-0 w-20 h-17 rounded-xl pt-2.5 bg-[#75020f] items-center hover:bg-black cursor-pointer">
+                <img src="./Assets/Coupe.png" alt="SUV" class="w-5 h-5">
+                <p class="text-sm">Coupe</p>
+            </div>
+            <!-- Convertible -->
+            <div class="flex flex-col border-0 w-20 h-17 rounded-xl pt-2.5 bg-[#75020f] items-center hover:bg-black cursor-pointer">
+                <img src="./Assets/Convertible.png" alt="SUV" class="w-5 h-5">
+                <p class="text-sm">Convertible</p>
+            </div>
+            <!-- Van -->
+            <div class="flex flex-col border-0 w-20 h-17 rounded-xl pt-2.5 bg-[#75020f] items-center hover:bg-black cursor-pointer">
+                <img src="./Assets/Van.png" alt="SUV" class="w-5 h-5">
+                <p class="text-sm">Van</p>
+            </div>
+            <!-- Trash -->
+            <div class="flex flex-col border-0 w-20 h-17 rounded-xl pt-2.5 bg-[#75020f] items-center hover:bg-black cursor-pointer">
+            <img src="./Assets/Trash.png" alt="SUV" class="w-5 h-5">
+            <p class="text-sm">Electric</p>
+            </div>
+        </div>
+        <!-- Lamborghini Urus Mansory -->
+        <div class="flex flex-row justify-center mt-10 mb-10">
+            <!-- car's images -->
+            <div class="flex flex-row gap-3">
+                <img src="/Home/Assets/MansoryVenatusSMansory.jpg" alt="" class="h-80 w-80 rounded-xl">
+                <img src="/Home/Assets/lambointerior.jpg" alt="" class="h-60 w-55 rounded-xl mt-13">
+            </div>
+            <div>
+                <!-- Car's name -->
+                <div class="flex flex-col items-center">
+                    <p class="ml-35 font-bold text-3xl w-95">Lamborghini Urus Venatus</p>
+                    <p class="ml-35 font-bold text-3xl ">Mansory</p>
+                </div>
+                <!-- infos -->
+                <div class="flex flex-row ml-10 gap-2 mt-7">
+                    <p class="font-bold">Year :</p>
+                    <p>2023-2024 (custom-built)</p>
+                </div>
+                <div class="flex flex-row ml-10 gap-2">
+                    <p class="font-bold">Vehicle Type :</p>
+                    <p>Ultra-Luxury Performance SUV</p>
+                </div>
+                <div class="flex flex-row ml-10 gap-2">
+                    <p class="font-bold">Transmission :</p>
+                    <p>8-speed automatic</p>
+                </div>
+                <div class="flex flex-row ml-10 gap-2">
+                    <p class="font-bold">Fuel Type :</p>
+                    <p>Premium gasoline</p>
+                </div>
+                <div class="flex flex-row ml-10 gap-2">
+                    <p class="font-bold">Engine :</p>
+                    <p> 4.0L twin-turbo V8 (Mansory-tuned)</p>
+                </div>
+                <div class="flex flex-row ml-10 gap-2">
+                    <p class="font-bold">Horsepower :</p>
+                    <p>900 hp (up from stock 641 hp)</p>
+                </div>
+                <div class="flex flex-row ml-10 gap-2">
+                    <p class="font-bold">Doors :</p>
+                    <p>4 (with Mansory suicide door conversion option)</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- find your car -->
+    <section class="flex flex-col">
+        <div class="border-0 pl-10 pt-5 pb-5 rounded-xl bg-[#51080d] ">
+            <p class="font-bold text-xl">Find Car</p>
+        </div>
+        <!-- paragraph + video -->
+        <div class="flex flex-row justify-center gap-25 items-center mt-10 ">
+            <!-- paragraph -->
+            <div class="flex flex-col w-150 items-center gap-10 ">
+                <p class="font-bold text-4xl">FIND CAR IN YOUR LOCATIONS</p>
+                <p>Discover the perfect vehicle tailored to your needs, wherever you are. Our 'Find Car in Your Locations' feature allows you to effortlessly search and select from our premium fleet available near you. Whether you're looking for a luxury sedan, a spacious SUV, or a sporty convertible, our easy-to-use tool ensures you find the ideal car for your journey. Simply enter your location, and let us connect you with top-tier vehicles ready for rental.</p>
+                <button class="bg-[#51080d] w-40 pt-3 pb-3 rounded-xl items-start cursor-pointer">Find A Location</button>
+            </div>
+            <!-- video -->
+            <div>
+                <video src="/Home/Assets/PinDown.io_1744642965.mp4" autoplay muted controls loop class=" w-130 h-130 border-0 rounded-2xl transition-transform [&::-webkit-media-controls]:hidden"></video>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cars logos -->
+    <section class="py-20 overflow-hidden">
+        <div class="w-max flex items-center gap-32 animate-scroll ">
+          <img src="assets/banner-1.png" alt="banner" class="h-[100px]"/>
+          <img src="assets/banner-2.png" alt="banner" class="h-[100px]"/>
+          <img src="assets/banner-3.png" alt="banner" class="h-[100px]"/>
+          <img src="assets/banner-4.png" alt="banner" class="h-[100px]"/>
+          <img src="assets/banner-5.png" alt="banner" class="h-[100px]"/>
+          <img src="assets/banner-7.png" alt="banner" class="h-[100px]"/>
+          <img src="assets/banner-8.png" alt="banner" class="h-[100px]"/>
+          <img src="assets/banner-9.png" alt="banner" class="h-[100px]"/>
+          <img src="assets/banner-10.png" alt="banner" class="h-[100px]"/>
+        </div>
+    </section>
+
+    <!-- before footer -->
+    <section class="flex flex-row justify-between items-end border-0 bg-[#51080d] pl-20 pr-30 h-70 mt-50 mr-10 ml-10 mb-10 rounded-4xl">
+        <div class="flex flex-col gap-10 mb-20">
+            <p class="font-bold text-3xl">PREMIUM CAR RENTAL</p>
+            <div class="flex flex-row gap-4">
+                <img src="/Home/Assets/apple.png" alt="" class="w-40 h-13">
+                <img src="/Home/Assets/google.png" alt="" class="w-40 h-13">
+            </div>
+        </div>
+        <!-- img -->
+        <div>
+            <img src="/Home/Assets/download.png" alt="" class="w-80">
+        </div>
+    </section>
+
+    <hr class="text-gray-600 ml-10 mr-10">
+    <!-- footer -->
+    <section class="ml-10 mr-10 mt-10">
+        <div class="flex flex-row justify-between items-center">
+            <p class="font-bold text-4xl w-150">Stay up to date on all the latest news.</p>
+            <div class="flex flex-row gap-5">
+                <input type="text" placeholder="Your Email..." class="border-2 border-[#75020f] rounded-lg w-80 h-7 pl-4">
+                <button class="bg-[#75020f] w-20 h-7 rounded-lg">Send</button>
+            </div>
+        </div>
+        <!-- more infos -->
+        <div class="flex flex-row  items-center gap-150 text-gray-300">
+            <div class="flex flex-row gap-10">
+                <div class="flex flex-col gap-4 mt-10 ">
+                    <p class="font-bold">Resources</p>
+                    <p>Installation Manual</p>
+                    <p>Release Note</p>
+                    <p>Community Help</p>
+                </div>
+                <div class="flex flex-col gap-4 mt-10 ">
+                    <p class="font-bold">Company</p>
+                    <p>About Us</p>
+                    <p>Career</p>
+                    <p>Press</p>
+                    <p>Support</p>
+                </div>
+                <div class="flex flex-col gap-4 mt-10">
+                    <p class="font-bold">Product</p>
+                    <p>Demo</p>
+                    <p>Security</p>
+                    <p>FAQ</p>
+                    <p>Features</p>
+                </div>
+            </div>
+            <!-- follow us -->
+            <div class="flex flex-row gap-4">
+                <p>facebook</p>
+                <p>instagram</p>
+                <p>linkedIn</p>
+            </div>
+        </div>
+        
+        
+        
+    </section>
+</body>
+</html>
