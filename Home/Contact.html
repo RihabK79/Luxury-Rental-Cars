@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../src/output.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">  
+    <title>Contact us Page</title>
+</head>
+<body  class="bg-[#171515] text-white font-sans mb-2">
+    <!-- header -->
+    <header class="flex flex-row justify-between pl-10 pr-10 pb-4 pt-4 text-sm shadow-2xl bg-[#171515] shadow-[#75020F] rounded-xl items-center fixed top-0 left-0 right-0">
+        <a href="home.html">
+            <img src="/Home/Assets/The_Koenigsegg__-removebg-preview.png" alt="" class="w-10 h-10">
+        </a>
+        <!-- Home - About - Contact -->
+        <div class="flex flex-row justify-evenly gap-15 opacity-80">
+            <!-- home -->
+            <a href="home.html">
+                <p class="cursor-pointer hover:text-[#df2531]">Home</p>
+            </a>
+            <!-- About -->
+            <a href="About.html">
+                <p class="cursor-pointer hover:text-[#df2531] ">About us</p>
+            </a>
+            <!-- Contact -->
+            <a href="Contact.html">
+                <p class="cursor-pointer underline">Contact us</p>
+            </a>
+        </div>
+        <!-- Sign in -->
+        <div class="flex flex-row gap-2 items-center border-0 bg-[#75020F] pl-4 pr-4 pt-2 pb-2 rounded-xl cursor-pointer opacity-80 hover:text-black">
+            <!-- <i class="fa-regular fa-user"></i> -->
+            <p>Get Started</p>
+        </div>
+    </header>
+
+
+    <!-- center -->
+    <section class="flex flex-row mt-25 justify-center gap-40">
+        <!-- right side -->
+        <div class="flex flex-col gap-5 mt-10">
+            <p class="font-bold text-5xl">CONTACT US</p>
+            <p>check on our social media: </p>
+            <div class="flex flex-row gap-4 text-2xl">
+                <i class="fa-brands fa-github"></i>
+                <i class="fa-brands fa-discord"></i>
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-linkedin"></i>
+            </div>
+        </div>
+        <!-- left side -->
+        <div class="flex flex-col bg-[#51080d] p-10 items-center gap-5 rounded-xl shadow-red-700 shadow-2xl">
+            <!-- first 2 infos -->
+            <div class="flex flex-row gap-10 ">
+                <div class="flex flex-col gap-3">
+                    <label for="">Name: </label>
+                    <input type="text" placeholder="Enter your name..." class="bg-white opacity-20 rounded-lg h-10 w-60">
+                </div>
+                <div class="flex flex-col gap-3">
+                    <label for="">Email: </label>
+                    <input type="text" placeholder="E@gmail.com" class="bg-white opacity-20 rounded-lg h-10 w-60">
+                </div>
+            </div>
+            <!-- 2nd info -->
+            <div class="flex flex-row gap-10 ">
+                <div class="flex flex-col gap-3">
+                    <label for="">Phone Number: </label>
+                    <input type="text" placeholder="0000000000" class="bg-white opacity-20 rounded-lg h-10 w-60">
+                </div>
+                <div class="flex flex-col gap-3">
+                    <label for="">Subject: </label>
+                    <input type="text" placeholder="Lorem ipsum" class="bg-white opacity-20 rounded-lg h-10 w-60">
+                </div>
+            </div>
+            <!-- 3rd info -->
+            <div class="flex flex-col gap-3">
+                <label for="">Message: </label>
+                <input type="text" placeholder="Lorem ipsum" class="bg-white opacity-20 rounded-lg h-30 w-135">
+            </div>
+
+            <!-- submit button -->
+             <button class="bg-red-800 h-10 w-40 rounded-lg cursor-pointer">Send Message</button>
+        </div>
+    </section>
+    
+</body>
+</html>
